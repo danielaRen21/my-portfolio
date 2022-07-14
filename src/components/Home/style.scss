@@ -1,0 +1,28 @@
+@import '../../custom.scss';
+
+.font{
+    padding-top: 15px;
+    padding-bottom: 80px;
+    // padding-left: 10px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.wave{
+    margin-top: -16%;
+}
+h1{
+    font-weight: bold;   
+    color: $title1;
+    display: flex;
+    justify-content: center;
+   }
+p{
+    padding: 40px;
+    text-align: center;
+}
+.wave3{
+    margin-top: -25px;
+}

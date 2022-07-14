@@ -1,7 +1,16 @@
 import "./App.css";
-import "bootstrap/dist/css/bootstrap-grid.min.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { NavBar } from "./components/NavBar/NavBar";
+import "./custom.scss";
+import { Home } from "./components/Home/Home";
+
 function App() {
-  return <h2>Holaa mundo!</h2>;
+  return (
+    <>
+      <NavBar />
+      <Home />
+    </>
+  );
 }
 
 export default App;
