@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Text = ({ title = "", paragraph = "", text = true, proyects }) => {
+export const Text = ({ title = "", paragraph = "", proyects, list }) => {
   return (
     <>
       {proyects ? (
@@ -20,7 +20,17 @@ export const Text = ({ title = "", paragraph = "", text = true, proyects }) => {
       ) : (
         <div>
           <h1>{title}</h1>
-          <p>{paragraph}</p>
+          {list ? (
+            <div className="experience-list">
+              <ul>
+                {list.map((experience) => (
+                  <li>{experience}</li>
+                ))}
+              </ul>
+            </div>
+          ) : (
+            <p>{paragraph}</p>
+          )}
         </div>
       )}
     </>

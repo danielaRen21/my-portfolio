@@ -27,8 +27,25 @@ export const Sections = () => {
       <div>
         <div className="container">
           <div>
-            <Text title="Laboral Experience" paragraph={experiences[0]} />
+            <Text title="Laboral Experience" list={experiences} />
           </div>
+        </div>
+      </div>
+      <div className="bg-light">
+        <div className="container info">
+          <div>
+            <img
+              src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp"
+              alt="hola"
+              className="w-50"
+            />
+          </div>
+
+          <ul>
+            {experiences.map((experience) => (
+              <li>{experience}</li>
+            ))}
+          </ul>
         </div>
       </div>
     </div>
