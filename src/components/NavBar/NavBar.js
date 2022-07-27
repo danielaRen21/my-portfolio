@@ -1,10 +1,11 @@
 import React from "react";
-import "./style.scss";
+import download from "../../img/download.svg";
+
 const elements = ["Home", "Proyects", "Experience", "Contact"];
 export const NavBar = () => {
   return (
     <div>
-      <nav class="navbar navbar-dark bg-primary">
+      <nav class="navbar  navbar-dark bg-primary">
         <ul class="navbar-nav flex-row">
           {elements.map((element) => (
             <>
@@ -16,9 +17,12 @@ export const NavBar = () => {
             </>
           ))}
         </ul>
-        <button type="button" className="btn btn-primary">
-          Resume
-        </button>
+        <div>
+          <button type="button" className="btn btn-danger">
+            <img src={download} alt="download" className="" />
+            Resume
+          </button>
+        </div>
       </nav>
     </div>
   );

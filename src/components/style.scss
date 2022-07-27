@@ -1,0 +1,70 @@
+
+@import '../custom.scss';
+li{
+    margin-right: 20px;
+    
+}
+a{
+    font-weight: bold;  
+    }
+nav{
+    padding-left: 40px;
+    padding-right: 40px;
+    
+}
+
+.btn-danger{
+        border-radius: 14px !important;
+        color: white !important;
+        font-weight: 600 !important;
+        display: flex !important;
+        align-items: center !important;
+            img{
+        margin: 5px;
+        height: 20px;
+        width: 20px;
+    }
+    }
+
+
+.font{
+    padding-top: 15px;
+    padding-bottom: 80px;
+    // padding-left: 10px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.wave{
+    margin-top: -16%;
+}
+h1{
+    font-weight: bold;   
+    color: $title1;
+    display: flex;
+    justify-content: center;
+   }
+p{
+    padding: 40px;
+    text-align: center;
+}
+
+.profile{
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    
+    div{
+        display: flex;
+        flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    img{
+        width: 60%;
+    }
+}
+} 
+

@@ -1,5 +1,4 @@
 import React from "react";
-import "./style.scss";
 import FontPage from "./FontPage";
 import { Sections } from "./Sections";
 
