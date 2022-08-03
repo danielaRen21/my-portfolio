@@ -28,8 +28,9 @@ export default function FontPage() {
               </button>
             </div>
           </div>
-
-          <img src={image} alt="programmer" />
+          <div className="image-container">
+            <img src={image} alt="programmer" />
+          </div>
         </div>
       </div>
       <div className="wave">

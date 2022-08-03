@@ -37,7 +37,21 @@ nav{
     justify-content: space-evenly;
     .presentation{
         margin-top: -8%;
+        // width: 100%;
+        h1{
+            max-width: 100%;
+    font-size: 3.5vw;
 
+        }
+    }
+    .image-container{
+        display: flex;
+        width: 70%;
+        align-items: center;
+        justify-content: center;
+        img{
+            max-width: 100%;
+        }
     }
     
 }
@@ -81,7 +95,10 @@ ol {
     }
 }
 .media{
+    display: flex;
+    width: 60%;
   .btn-circle{
+    height: 100%;
     border-radius: 50%;
     padding: 0px;
     margin: 0px;
