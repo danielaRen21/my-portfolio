@@ -19,13 +19,13 @@ export const NavBar = () => {
                   <Nav.Link href="#home">{element}</Nav.Link>
                 </>
               ))}
-              <div>
-                <button type="button" className="btn btn-danger">
-                  <img src={download} alt="download" className="" />
-                  Resume
-                </button>
-              </div>
             </Nav>
+            <div>
+              <button type="button" className="btn btn-danger">
+                <img src={download} alt="download" className="" />
+                Resume
+              </button>
+            </div>
           </Navbar.Collapse>
         </Container>
       </Navbar>

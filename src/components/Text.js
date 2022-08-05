@@ -1,21 +1,29 @@
 import React from "react";
+import Carousel from "react-bootstrap/Carousel";
+import proyectImg from "../img/proyect.svg";
 
 export const Text = ({ title = "", paragraph = "", proyects, list }) => {
   return (
     <>
       {proyects ? (
         <>
-          {proyects.map((proyect) => (
-            <div>
-              <img
-                src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp"
-                alt={proyect.title}
-                className=""
-              />
-              <h1>{proyect.title}</h1>
-              <p>{proyect.text}</p>
-            </div>
-          ))}
+          <Carousel>
+            {proyects.map((proyect) => (
+              <Carousel.Item interval={70000} className="carousel">
+                <img
+                  className="d-block w-20 container"
+                  src={proyectImg}
+                  alt={proyect.title}
+                />
+                <Carousel.Caption>
+                  <h3>{proyect.title}</h3>
+                  <p>
+                    Nulla vitae elit libero, a pharetra augue mollis interdum.
+                  </p>
+                </Carousel.Caption>
+              </Carousel.Item>
+            ))}
+          </Carousel>
         </>
       ) : (
         <div>

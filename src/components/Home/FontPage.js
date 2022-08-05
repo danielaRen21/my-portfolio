@@ -34,11 +34,9 @@ export default function FontPage() {
           </div>
         </div>
       </div>
-      <div>
-        <img className="w-100" src={wave3} alt="" />
-      </div>
-      <div className="wave d-md-flex d-none">
-        <img className="w-100" src={waves} alt="" />
+      <div className="wave d-md-flex ">
+        <img className="d-none d-sm-flex w-100" src={waves} alt="" />
+        <img className="d-sm-none d-flex w-100 pt-4" src={wave3} alt="" />
       </div>
     </div>
   );

@@ -2,6 +2,7 @@ import React from "react";
 
 import wave2 from "../../img/wave2.svg";
 import wave3 from "../../img/wave3.svg";
+import proyect from "../../img/proyect.svg";
 import { Text } from "../Text";
 import { experiences, paragraphs, proyects } from "./Mock";
 
@@ -17,7 +18,7 @@ export const Sections = () => {
         <img className="w-100" src={wave2} alt="programmer" />
         <div className="bg-light">
           <div className="container">
-            <div className="profile">
+            <div className="">
               <Text proyects={proyects} />
             </div>
           </div>
@@ -34,11 +35,7 @@ export const Sections = () => {
       <div className="bg-light">
         <div className="container info">
           <div>
-            <img
-              src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp"
-              alt="hola"
-              className="w-50"
-            />
+            <img src={proyect} alt="hola" className="w-50" />
           </div>
 
           <ul>
