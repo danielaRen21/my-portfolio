@@ -1,6 +1,7 @@
 import React from "react";
 import image from "../../img/programmer.svg";
-import wave from "../../img/waveLanding.svg";
+import waves from "../../img/waves.svg";
+import wave3 from "../../img/wave3.svg";
 import linkedin from "../../img/linkedin.svg";
 import github from "../../img/github.svg";
 import gmail from "../../img/gmail.svg";
@@ -28,13 +29,16 @@ export default function FontPage() {
               </button>
             </div>
           </div>
-          <div className="image-container">
-            <img src={image} alt="programmer" />
+          <div className="image-container d-md-flex ">
+            <img src={image} alt="programmer" className=" " />
           </div>
         </div>
       </div>
-      <div className="wave">
-        <img className="w-100" src={wave} alt="" />
+      <div>
+        <img className="w-100" src={wave3} alt="" />
+      </div>
+      <div className="wave d-md-flex d-none">
+        <img className="w-100" src={waves} alt="" />
       </div>
     </div>
   );

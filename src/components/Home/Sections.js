@@ -13,7 +13,7 @@ export const Sections = () => {
           <Text title="About me" paragraph={paragraphs[0]} />
         </div>
       </div>
-      <div>
+      <div className="section-proyects">
         <img className="w-100" src={wave2} alt="programmer" />
         <div className="bg-light">
           <div className="container">
